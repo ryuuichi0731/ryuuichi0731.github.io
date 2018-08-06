@@ -5,11 +5,19 @@
     <title>Maind Map</title>
   </head>
   <body>
-
   </body>
-  <br>
-  <br>
-
+  <ul class="topnav">
+<li><a class="active" href="https://ryuuichi0731.github.io/">Home</a></li>
+<li><a href="self introduction.html">About</a></li>
+<li><b><a href="https://pin.it/3ztwdxajspkrsy">Pinterest</a></b></li>
+<li><b><a href="https://www.pinterest.jp/rhwnp5000/inspiration/">Inspiration</a></b></li>
+<li><b><a href="https://www.pinterest.jp/rhwnp5000/inspiration/">Landscape</a></b></li>
+<li><b><a href="https://www.pinterest.jp/rhwnp5000/architecture/">Architecture</a></b></li>
+<li><b><a href="https://www.pinterest.jp/rhwnp5000/picture-illustration/">Illustration</a></b></li>
+<li><b><a href="https://www.pinterest.jp/rhwnp5000/materials/">Material</a></b></li>
+<li><b><a href="https://www.pinterest.jp/rhwnp5000/%E3%83%8F%E3%83%BC%E3%83%88/">ハート</a></b></li>
+<li class="right"><a href="atom.Portfolio.html">Portfolio</a></li>
+</ul>
   <br>
   <br>
 
@@ -32,8 +40,7 @@
     <br>
 
     <br>
-    <b>  ※（スライドの各テーマは[クリック]で自分の集めたそれぞれのPinterestのページに移動することができます。）</b>
-    <br>
+
     <br>
 
   </p>
@@ -48,8 +55,7 @@
 
 <div class="cp_accordionslide01">
 <div class="slideitem">
-  <h2><a href="https://www.pinterest.jp/rhwnp5000/inspiration/" class="square_btn2">
-    <i class="fa fa-chevron-right"></i>Inspiration</a></p></h2>
+  <h2>Inspiration</h2>
 
 <div class="slidecont">
   <div class="box10">
@@ -63,8 +69,7 @@
 </div>
 </div>
 <div class="slideitem">
-  <h2><a href="https://www.pinterest.jp/rhwnp5000/landscape/" class="square_btn2">
-    <i class="fa fa-chevron-right"></i>Landscape</a></p></h2>
+  <h2>Landscape</h2>
 
 <div class="slidecont">
     <div class="box10">
@@ -85,9 +90,7 @@
 </div>
 
 <div class="slideitem">
-  <h2><a href="https://www.pinterest.jp/rhwnp5000/architecture/" class="square_btn2">
-    <i class="fa fa-chevron-right"></i>Archit.</a>・<a href="https://www.pinterest.jp/rhwnp5000/materials/" class="square_btn2">
-        <i class="fa fa-chevron-right"></i>Material</a></p></p></h2>
+  <h2>Archit.・Material</h2>
 
 
 <div class="slidecont">
@@ -103,8 +106,7 @@
 </div>
 </div>
 <div class="slideitem">
-  <h2><a href="https://www.pinterest.jp/rhwnp5000/picture-illustration/" class="square_btn2">
-    <i class="fa fa-chevron-right"></i>Illustration</a></p></h2>
+  <h2>Illustration</h2>
 
 <div class="slidecont">
   <div class="box10">
@@ -121,8 +123,7 @@
 </div>
 </div>
 <div class="slideitem">
-  <h2><a href="https://www.pinterest.jp/rhwnp5000/%E3%83%8F%E3%83%BC%E3%83%88/" class="square_btn2">
-    <i class="fa fa-chevron-right"></i>ハート</a></p></h2>
+  <h2>ハート</h2>
 
 <div class="slidecont">
     <div class="box10">
@@ -141,10 +142,6 @@
 </div>
 <br>
 <br>
-<br>
-<br>
-<br>
-<br>
 
     <br>
     <br>
@@ -158,18 +155,6 @@
   <br>
   <br>
   <br>
-
-  <center>
-    <a href="https://ryuuichi0731.github.io/" class="square_btn1">HOME</a>
-  </center>
-  <br>
-  <br>
-  <br>
-  <br>
-
-  <br>
-  <br>
-
   </html>
 
 
@@ -178,6 +163,21 @@
 </html>
 <style media="screen">
 body {background-color:#333333; }
+
+h2 {
+border-bottom: solid 3px #ff0000;
+position: relative;
+}
+
+h2:after {
+position: absolute;
+content: " ";
+display: block;
+border-bottom: solid 3px #fff;
+bottom: -3px;
+width: 20%;
+}
+
 
 
 .box11{
@@ -215,6 +215,8 @@ body {background-color:#333333; }
 
 h1{font-family: 'Orbitron', sans-serif;
 font-size: 50px}
+h2{color: #fff;
+font-family: 'Orbitron', sans-serif;}
 
 
 h3 {
@@ -247,7 +249,7 @@ display: -ms-flexbox;
 display: flex;
 visibility: hidden;
 width: 100%;
-height: 90vh;
+height: 100vh;
 }
 .cp_accordionslide01 .slideitem {
 position: relative;
@@ -321,36 +323,43 @@ width: 15%;
     box-shadow: 0px 0px 1px rgba(0, 0, 0, 0.2);
     border-bottom: none;
 }
-.square_btn1 {
-    display: inline-block;
-    padding: 0.7em 3em;
-    text-decoration: none;
-    color: #FFF;
-    border: solid 2px #FFF;
-    border-radius: 3px;
-    transition: .4s;
-}
 
-.square_btn1:hover {
-    background: #990000;
-    color: white;
-}
 .box37{color:#fffafa;}
 
 
 
-.square_btn2 {
-    position: relative;
-    display: inline-block;
-    font-weight: bold;
-    padding: 0.10em 0.2em;
-    text-decoration: none;
-    color: #FFF;
-    background: #dc143c;
-    transition: .4s;
-  }
 
-.square_btn2:hover {
-    background: #2f4f4f;
+
+ul.topnav {
+overflow: hidden;
+margin: 0;
+padding: 0;
+list-style-type: none;
+background-color: #1b2538;
 }
+ul.topnav li {
+float: left;
+}
+ul.topnav li a {
+display: block;
+padding: 14px 16px;
+text-align: center;
+text-decoration: none;
+color: white;
+}
+ul.topnav li a:hover:not(.active) {
+background-color: #a9bce2;
+}
+ul.topnav li a.active {
+background-color: #da3c41;
+}
+ul.topnav li.right {
+float: right;
+}
+@media screen and (max-width: 480px) {
+ul.topnav li.right, ul.topnav li {
+float: none;
+}
+}
+
 </style>
