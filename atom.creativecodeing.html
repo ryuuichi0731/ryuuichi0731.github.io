@@ -4,12 +4,26 @@
     <meta charset="utf-8">
     <title>creativecodeing / p5js</title>
   </head>
+  <ul class="topnav">
+<li><a class="active" href="https://ryuuichi0731.github.io/">Home</a></li>
+<li><a href="self introduction.html">About</a></li>
+<li class="right"><a href="atom.Portfolio.html">Portfolio</a></li>
+</ul>
           <br>
             <br>
               <br>
-  <img src="Enlight1054.jpg" height="130"width="600" alt="">
-      <div style="margin-left:300px; margin-right:300px;">
 
+
+      <div style="margin-left:300px; margin-right:300px;">
+        <img src="Enlight1054.jpg" height="150"width="650" alt="">
+
+        <br>
+        <br>
+        <br>
+      
+        <a href="#" class="square_btn">
+	<i class="https://editor.p5js.org/"></i> start p5.js
+</a>
 
         <br>
         <br>
@@ -90,23 +104,167 @@ draw関数の下、[background]は出力画面の背景色を表している。�
 <br>
 
 <h3>Canvasreativecodeing / Art expression</h3>
-
-
-
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
 <br>
 
+<img src="Enlight1063.jpg" height="400"width="250"alt="">
+<div style="margin-left:300px;margin-right:245px;margin-top:-260px;">
+<img src="Enlight1064.jpg" height="250"width="150"alt="">
+</div>
+<br>
+<div style="margin-left:490px;margin-right:0px;margin-top:-170px;">
+これは「有名な絵画をp５.jsを使って模写する」という課題である。
+だが、なぜか私は、最初、「自分のアパートを手書きで描いた」
+それはおそらく、木下栄三の「描きたくなる！水彩スケッチ」を読んで自分の似たような情緒を表現したかったからだと思われる。
+</div>
+<br>
+<br>
+<hr>
+  <br>
+  <br>
+<img src="Enlight1058.jpg" height="230"width="430"alt="ジャクソン・ポロック">
+<div style="margin-left:480px;margin-right:0px;margin-top:-240px;">
+  <b>課題の趣旨と違うため、開き直って、別のものを作る。</b>
+「有名な絵画」のモチーフだが、「ジャクソン・ポロック」の[ワン：ナンバー31, 1950]を選んだ。理由はアクションペインティングの無意識で描かれたようで、何か深遠な観念を感じさせてくれるアートに興味があったからである。もしかしたら、「行為としてのアート」も無意識でおこなったとは言っても、プログラミングの変数のように、「計算された無意識」の営みであったのかもしれない。
+</div>
+<br>
+<br>
+<br>
+<br>
+<img src="Enlight1057.jpg" height="230"width="430"alt="">
+<br>
+<br>
+<br>
+<br>
+<br>
+<img src="Enlight1065.jpg"height="230"width="430" alt="">
+
+
+<div style="margin-left:480px;margin-right:0px;margin-top:-580px;">
+プログラミングの説明だが、今回は「ひとかき」でラインのグラデーションを表現し、コントラストを作った。使用した変数は[randomLine/variableline]だ。
+マウスの位置を（XとY）で表し、移動した位置を（pxとpy）とした。双方のパラメーターで、マウスを動かした（運動）のスピードをはかり、早く動かした時と、遅く動かした時とで、色に差が生ずる。
+スピードが「変数」（変わる数）となるので、「[var]変数名」の変数名は[speed]とし、[＝]で値と結んだ。変数の計算は[mouseX]と[pmouseX]/[mouseY]と[pmouseY]にそれぞれ分け、[abs(x-px)/abs(y-py)]として二つを足して[abs(x-px)＋abs(y-py)]とし、その計算結果の値によってスピード値が決定される。
+＊（p ＝ previous[前フレーム] / abs = absolute[絶対値]）[stroke]は色の値だが、何も入力しないと白〜黒の色間のグラデーションが「スピード値」によって変化する。
+[speed]の変数を[stroke]入力し、スピード値によって色が変化する。値を入力して、カラーも調整できるが、モノクロが一番しっくりくる。自動ではなく、手動でマウスを動かし、表現。（チープだが、アクションペインティング風に少し似せることはできたと思う。）
+</div>
+<br>
+<br>
+<br>
+<img src="Enlight1056.jpg" height="400"width="600"alt="">
+<br>
+<br>
+<br>
+<hr>
+<br>
+<br>
+<br>
+
+最後に、自分の制作物を<a href="https://www.openprocessing.org/">[OpenProcessing]</a>という公開サイトにアップロードした。
+ここでは、自分たちみたいな学生から、プロのクリエイターまで、様々な人達が制作したクリエイティブコーディングのプログラムをみることができる。
+このようなオープンソース環境は開発環境にとって大きな学習の場として機能するだろう。自分たちがしっているプログラミング言語はごく僅かであるが、
+これを参考に、どのような表現方法があるのか勉強してみるのも面白いと思った。
+<br>
+<br>
+<br>
+<br>
+<a href="https://www.openprocessing.org/sketch/659706" class="square_btn">
+	<span>MY Work→</span>
+</a>
+
+
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
 
 </div>
 
 </html>
 <style media="screen">
+  .square_btn {
+      position: relative;
+      display: inline-block;
+      font-weight: bold;
+      padding: 7px 10px 10px 10px;
+      text-decoration: none;
+      color: #FFF;
+      background: #a180dc;
+      transition: .4s;
+  }
+
+  .square_btn>span {
+      border-bottom: solid 2px #FFF;
+  }
+
+  .square_btn:hover {
+      background: #FF0575;
+  }
+
+  .square_btn2 {
+      position: relative;
+      display: inline-block;
+      font-weight: bold;
+      padding: 12px 0 8px;
+      text-decoration: none;
+      color: #67c5ff;
+      transition: .4s;
+  }
+
+
+  .square_btn2 {
+    position: relative;
+    display: inline-block;
+    font-weight: bold;
+    padding: 0.25em 0.5em;
+    text-decoration: none;
+    color: #FFF;
+    background: #00bcd4;
+    transition: .4s;
+  }
+
+.square_btn2:hover {
+    background: #1ec7bb;
+}
+
+
+
+
+ul.topnav {
+overflow: hidden;
+margin: 0;
+padding: 0;
+list-style-type: none;
+background-color: #1b2538;
+}
+ul.topnav li {
+float: left;
+}
+ul.topnav li a {
+display: block;
+padding: 14px 16px;
+text-align: center;
+text-decoration: none;
+color: white;
+}
+ul.topnav li a:hover:not(.active) {
+background-color: #a9bce2;
+}
+ul.topnav li a.active {
+background-color: #da3c41;
+}
+ul.topnav li.right {
+float: right;
+}
+@media screen and (max-width: 480px) {
+ul.topnav li.right, ul.topnav li {
+float: none;
+}
+}
 
 
 </style>
