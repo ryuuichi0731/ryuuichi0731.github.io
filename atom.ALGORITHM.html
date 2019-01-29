@@ -7,6 +7,7 @@
   <ul class="topnav">
 <li><a class="active" href="https://ryuuichi0731.github.io/">Home</a></li>
 <li><a href="self introduction.html">About</a></li>
+<li><a class="" href="https://scratch.mit.edu/projects/282867450/fullscreen/">Cut Maze / 制作したゲームをPlay</a></li>
 <li class="right"><a href="atom.Portfolio.html">Portfolio</a></li>
 </ul>
 
@@ -59,7 +60,13 @@
       1日目では、アルゴリズムを自ら考え、課題を解決するという取り組みを行った。
       その一例が「しめじソート」である。
       課題：「しめじを長さ順に並べよ！」
-      この問いに対するもっとも有効な「アルゴリズム」はこうだ。
+      この問いに対するもっとも有効な「アルゴリズム」はこうだ<b> ↓ </b>
+      <br>
+      <br>
+      <div class="box18">
+    <p>
+      <br>
+      　 <br>
       まず、しめじ全てを「２つ」づつ（奇数の場合は１つあまる）に分け、
       ２つに分けたしめじの各グループで長さを比べる。長い方を右へ、短い方は左へ配置を変える。
       次に左から右隣のしめじと、最初は各グループで長い方（右側）同士で長さを比べ、長い方を外へ、短い方を元の位置に戻す。
@@ -67,6 +74,7 @@
       この作業が終わったあとも、隣あうグループ同士で２つを長さ順に比較を行い、長い方を外へ、短い方は戻し、残ったしめじの中で最も長いものと長さを比べていく。（２つで比べ、１つは一方より長く、もう一つは短い）
       このようなグループの併合を上記と同じ手順で、全ての併合が終わるまで行なう。（もちろん長さ順に並べながら。）
       こうして「しめじソートのアルゴリズム」が完遂される。
+
       <br>
       　 <br>
       <br>
@@ -75,6 +83,8 @@
       <img src="Enlight1103.jpg" height="300"width="470"alt="simezi"></div>
 <br>
 　 <br>
+</p>
+</div>
 <br>
 　 <br>
 
@@ -151,9 +161,9 @@ idea 2 :「回転流し素麺」</b><p>
 <br>
 <br>
 <br>
-
-<img src="Enlight1101.jpg"height="450"width="300" alt="huro-tya-to"><br>
-
+<div style="margin-left:300px;margin-right:0px;margin-top:0px;">
+<img src="Enlight1101.jpg"height="550"width="400" alt="huro-tya-to"><br>
+</div>
 <br>
 <br>
 <br>
@@ -167,18 +177,117 @@ idea 2 :「回転流し素麺」</b><p>
 <h3>Scratch!</h3>
 <br>
 <br>
+<img src="Enlight1108.jpg"height="250"width="500" alt="">
+<br>
+<br>
+<br>
+<br>
+<div style="margin-left:0px;margin-right:200px;margin-top:0px;">
+これまでの過程で「アルゴリズム」の仕組みと、その構造について学んだわけだが、ここからは[Scratch]というプログラミングソフトウェアを使って制作した「ゲーム」について紹介していく。[Scratch]は、初心者が最初に正しい構文の書き方を覚えること無く結果を得られる、遊び心のある実験やインタラクティブアニメーション、ゲームなどの製作を行うことのできるプログラミング言語でもある。
+私は、最初、プログラミングという行為にあまり馴染めず、しっかりした流れのある構文をつくるのにも一苦労したが、なんとな〜く基礎が理解できてきた今日この頃である。一番最初に「ゲーム」とはなんたるものか？　という話だが、ここでは「ゲーム」の最低条件の三つを確認しておく。この３つのルールをクリアして、「ゲーム性」があるものとしたい。
+<br>
+<br>
+<br>
+<br>
+<b>
+１：「行動を初期化（スタートからやり直す）仕組みがある。」<br>
+<br>
+２：「始まりと終わりがあり、プログラミングとして完結している」<br>
+<br>
+３：「誰がやっても同じように操作したり遊ぶことができる」</b></div>
+<br>
+<br>
+<br>
+<hr>
+<br>
+<br>
+<br>
+<h3>制作したゲーム　：　<a href="https://scratch.mit.edu/projects/282867450/fullscreen/" class="square_btn">Cut Maze</a></h3>
+<br>
+<br>
+<br>
+私がつくったのは「迷路」のゲームだ。仕組みはいたって単純。[start]から[gole]まで迷路を進んでいくだけだ。「矢印→」の場所からスタートし、「リンゴのスクリプト」にたどり着いたら「ゲームクリア」となる。なお、途中にある迷路の壁に触れたら「ゲームオーバー」となり、再びスタート位置に戻される。
 <br>
 <br>
 <br>
 <br>
 <br>
+<div style="margin-left:-90px;margin-right:500px;margin-top:0px;">
+<img src="Enlight1113.jpg" height="700"width="480"alt="puro"><br>
+</div>
+<br>
+<br>
+<div style="margin-left:400px;margin-right:0px;margin-top:-740px;">
+  <h3>programming</h3>
+見ての通りだが、一応捕捉説明をつけておく。まず、プログラムがスタートするのは[Space キー]が押された時だ。「移動構文」の「マウスの位置に移動」という言語を使い、マウスの位置まで、対象のスクリプトが移動する。次に、「ゲームオーバー」となる「迷路の壁」への当たり判定を設定するにあたり、「色」で判定をつける。移動スクリプトの境界線（黒色）が、壁の（緑）色に触れた時、「ゲームオーバー」となる。
+「Game over」と２秒間言ったあと「鳴き音」を出して元の「スタート位置」へと戻るようになっている。ちなみに「→」の位置まで移動するのは「特定の場所へ移動」という構文を使っている。そして、「ゲームクリア」の判定は「リンゴに触れた時」である。これにも「ゲームオーバー」の時と同じ、色判定を用いている。移動するスクリプトの色（黒）がリンゴの色（赤）に触れた時、「Game clear」といい、スタート位置に戻るようにした。これがこのゲームプログラムの全容である。
+<br>
+</div>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+
+<br>
+
+    <p>
+<h3>Cut Maze play movie</h3>
+<br>
+<div style="margin-left:0px;margin-right:0px;margin-top:0px;">
+<iframe width="560" height="315" src="https://www.youtube.com/embed/nwD1q6YD2Cs" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+<br>
+<br>
+
+<br></div>
+</p>
+
+<br>
+<br>
+<br>
+<br>
+<hr>
+
+<br>
+<br>
+
+
+
+<div style="margin-left:0px;margin-right:100px;margin-top:0px;">
+      <br>
+      <br>
+<h3>まとめ・考察</h3>
+
+<br>
+<br>
+今回の授業が初の「プログラミング経験」となった。[Scratch]は初心者向けに開発された言語ではあったが、やはり慣れるまでに時間がかかったし、まだ「慣れた」と言ってもほんの少しだけである。量的な質を求めるなら、まだまだ練習不足であるが、この辺で締めくくろうと思う。ところで、今回の議題「アルゴリズム」だが、私はこの授業を終えて、最も原始的なアルゴリズムが「DNA」であるという授業での
+豆知識程度に言われたことが一番印象に残っている。ちょうど１年前くらいだろうか。リチャード・ドーキンス著『利己的な遺伝子』という本に、生物は皆、「遺伝子に操作されている機会」にすぎない。と書かれていたのを見て衝撃を受けた（人間は少し違う）。なるほど、遺伝子とは生物の自然淘汰と環境への順応によって高度に洗練されたDNA（アルゴリズム）によって動いている、生きているのか！そんな長い歴史と、進化によって確立したアルゴリズムが私たち生命体の中で存在しているのかと思うと、なんだか、生命の営みとは「アルゴリズムと計算能力の結果にすぎないモノ」なのではないか、と唯物論的なことを考えてしまった。
+
+</div>
+<br>
+<br>
+
+<br>
+<br>
+
+
+
+
+
+
+</div>
+
 <br>
 <br>
 <br>
 <br>
 <br>
 </div>
-
+</div>
 </html>
 <style media="screen">
 
@@ -213,5 +322,65 @@ ul.topnav li.right, ul.topnav li {
 float: none;
 }
 }
+
+
+.box18{
+    margin:2em 0;
+    position: relative;
+    padding: 0.25em 1em;
+    border: solid 2px #ffcb8a;
+    border-radius: 3px 0 3px 0;
+}
+.box18:before,.box18:after
+{
+    content: '';
+    position: absolute;
+    width:10px;
+    height: 10px;
+    border: solid 2px #ffcb8a;
+    border-radius: 50%;
+}
+.box18:after {
+    top:-12px;
+    left:-12px;
+}
+.box18:before {
+    bottom:-12px;
+    right:-12px;
+}
+.box18 p {
+    margin: 0;
+    padding: 0;
+}
+
+
+.square_btn{
+   position: relative;
+   display: inline-block;
+   font-weight: bold;
+   padding: 0.25em 0;
+   text-decoration: none;
+   color: #67c5ff;
+}
+
+.square_btn:before{
+   position: absolute;
+   content: '';
+   width: 100%;
+   height: 4px;
+   top:100%;
+   left: 0;
+   border-radius: 3px;
+   background:#67c5ff;
+   transition: .2s;
+}
+
+.square_btn:hover:before {
+    top: -webkit-calc(100% - 3px);
+    top: calc(100% - 3px);
+}
+
+
+
 
 </style>
