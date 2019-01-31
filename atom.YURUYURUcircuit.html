@@ -9,6 +9,7 @@
     <ul class="topnav">
   <li><a class="active" href="https://ryuuichi0731.github.io/">Home</a></li>
   <li><a href="self introduction.html">About</a></li>
+  <li><a href="https://makecode.microbit.org/_YLTW0XFbVfTC">microbit: my work</a></li>
   <li class="right"><a href="atom.Portfolio.html">Portfolio</a></li>
   </ul>
 
@@ -28,8 +29,10 @@
       <br>
       <br>
       <hr>
-          < Lecture contents >
-          <b>
+      <br>
+      <br>
+          <b>< Lecture contents ></b>
+
 <br>
 <br>
           2018/9/27 ~ 10/9
@@ -43,16 +46,17 @@
 <br>
           ・3day, 12/5　[REVIEW]
 <br>
+<br>
+<br>
 <hr>
 <br>
 <br>
 <br>
 <br>
 <br>
-</b>
 <body>
     <p><h3>What's Soldering Iron?</h3>
-      <span style="line-height:230%">
+      <span style="line-height:200%">
 Soldering Iron,はんだごて（半田ごて、半田鏝）とは、はんだ付けにおいて、はんだおよび接合部分を加熱するために用いる工具。電子工作を行う上では必須道具であり、ニクロム線ヒーターやセラミックヒーターを用いた電熱式の製品が大半であるが、電源の無い所でも使用できるように、電池式のものや、ガスを燃焼させる製品もある。
 <br>
 <br>
@@ -85,7 +89,7 @@ Soldering Iron,はんだごて（半田ごて、半田鏝）とは、はんだ�
 <hr>
 <br>
 <h3>What's "Micro:bit"?</h3>
-"micro:bit"（マイクロビット）はプログラミングして操れる小さなコンピューター。25個のLED、2個のボタンスイッチのほか、加速度センサーと磁力センサー、無線通信機能などがついている。マイクロビットは、デバイスと開発環境である<a href="https://microbit.org/ja/">マイクロビットソフトウエア</a>とで連携でき、プログラム次第で、多種多様な出力を行うことができる。<br>
+"micro:bit"（マイクロビット）はプログラミングして操れる小さなコンピューター。25個のLED、2個のボタンスイッチのほか、加速度センサーと磁力センサー、無線通信機能などがついている。マイクロビットは、デバイスと開発環境である<a href="https://microbit.org/ja/" class="part_line"><i class="fa fa-caret-right"></i>Micro:bit Software</a> とで連携でき、プログラム次第で、多種多様な出力を行うことができる。<br>
 <br>
 <img src="Enlight1041.jpg"height="300"width="500" alt="">
 <br>
@@ -95,7 +99,7 @@ Soldering Iron,はんだごて（半田ごて、半田鏝）とは、はんだ�
 <br>
 <br>
 <h3>Prototype of "micro:bit"</h3>
-マイクロビット ではソフトウエアを使った、様々な試作や試みを行ったので、そのうち、「コンパスゲーム」と「体温計」の２つを紹介する。
+マイクロビット ではソフトウエアを使った、様々な試作や試みを行ったので、そのうち、<a href="https://makecode.microbit.org/_YLTW0XFbVfTC" class="part_line"><i class="fa fa-caret-right"></i><b>コンパスゲーム</b></a>を紹介する。
 なお、今回の実習の課題である「普段光らないようなものを光らせよう」では上記の「コンパスゲーム」を提出した。これは、マイクロビット 自体にLEDが備わっているため、LEDの光でコンパスを表現し、ゲーム性を加えたものである。コンパスゲームでは、アイデア段階ではコンパスの機能だけを再現するつもりだったが、その場合、iphoneのコンパスと差別化できないため、エンターテイメント要素を付け加え、
 マイクロビット のコンパクトさを活かして、よりおもちゃらしくしようと考えた。普段なら、方角についての意識などほとんどなく、どちらが「東」でどっちが「西」なのかなかなか判断しにくい。
 そこで、このおもちゃによって、方角についての感覚や感性が試される。一度方角を知った場所で、繰り返すと慣れてきて正確な方角がつかめるようになり、徐々にいろんな場所で実践することで、次第に方角感覚が戻ってくるというコンセプトだ。
@@ -148,8 +152,6 @@ microbitのコンパスは起動させたり、リセットさせたりする度
 </body>
 <style media="screen">
 
-body {background-color:}
-
 ul.topnav {
 overflow: hidden;
 margin: 0;
@@ -182,5 +184,21 @@ float: none;
 }
 }
 
+.part_line{
+    position: relative;
+    display: inline-block;
+    font-weight: bold;
+    padding: 0.25em 0.5em;
+    text-decoration: none;
+    border-bottom: solid 2px #1c7bb;
+    border-left: solid 2px #1c7bb;
+    color: #1ec7bb;
+    transition: .4s;
+    }
+
+.part_line:hover {
+    padding-left: 0.7em;
+    padding-right: 0.3em;
+}
 
 </style>
